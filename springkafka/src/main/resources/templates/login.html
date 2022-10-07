@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina de Login</title>
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="box">
+    <form action="">
+        <fieldset>
+            <legend><b>Login</b></legend>
+            <br>
+            <div class="inputbox">
+                <input type="cpf" name="cpf" id="cpf" class="inputUser2" required>
+                <label for="cpf" class="labelinput2">CPF</label>
+            </div>
+            <br><br>
+            <div class="inputbox">
+                <input type="password" name="password" id="password" class="inputUser2" required>
+                <label for="password" class="labelinput2">Senha</label>
+            </div>
+            <br>
+            <a th:href="@{/cadastro}">Não tenho cadastro</a>
+            <br><br>
+            <button  type="submit2" name="submit2" id="submit2"><a th:href="@{/consultar}">Enviar</a></button>
+
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
