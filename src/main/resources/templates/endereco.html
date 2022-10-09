@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link th:href="@{/css/login.css}" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../image/unnamed.png" type="image/x-icon">
+
+  <title>BANCO PAN</title>
+</head>
+<body>
+<div class="box">
+  <form action="endereco" method="post">
+    <fieldset>
+      <legend><b>Endereço</b></legend>
+      <br>
+      <div class="inputbox">
+        <input type="text" name="cep" id="cep" class="inputUser" required>
+        <label for="cep" class="labelinput">CEP</label>
+      </div>
+      <br>
+      <div class="inputbox">
+        <input type="text" name="logradouro" id="logradouro" class="inputUser" required>
+        <label for="Logradouro" class="labelinput">Logradouro</label>
+      </div>
+      <br>
+      <div class="inputbox">
+        <input type="text" name="uf" id="uf" class="inputUser" required>
+        <label for="uf" class="labelinput">UF</label>
+      </div>
+      <br>
+      <div class="inputbox">
+        <input type="text" name="nm_cidade" id="nm_cidade" class="inputUser" required>
+        <label for="nm_cidade" class="labelinput">Cidade</label>
+      </div>
+      <br>
+      <button type="submit" name="submit" id="submit"><a th:href="@{/parabens}">Enviar</a></button>
+    </fieldset>
+  </form>
+</div>
+
+</body>
+</html>

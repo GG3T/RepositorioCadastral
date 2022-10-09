@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+    <link rel="shortcut icon" href="../image/unnamed.png" type="image/x-icon">
+
+    <title>Banco PAN</title>
+</head>
+<body>
+<div class="box">
+    <div class="inputUser3">
+        <h3>Nome</h3>
+    </div>
+    <form action="">
+        <fieldset>
+            <legend><b>Menu</b></legend>
+            <br>
+            <div>
+                <button  type="submit3" name="submit" id="submit3"><a th:href="@{/informacoes}"><img th:src="@{/image/leader.png}" alt="">- Informações</a></button>
+            </div>
+            <br>
+            <div>
+                <button  type="submit3" name="submit" id="submit3"><a th:href="@{/meusprodutos}"><img th:src="@{/image/box.png}" alt="">- Meus Produtos</a></button>
+            </div>
+            <br>
+            <div>
+                <button  type="submit3" name="submit" id="submit3"><a th:href="@{/contratar}"><img th:src="@{/image/products.png}" alt="">- Contratar Produtos</a></button>
+            </div>
+            <br>
+
+            <div>
+                <button  type="submit3" name="submit3" id="submit3"><a th:href="@{/login}">- Sair</a></button>
+            </div>
+            <br>
+
+        </fieldset>
+    </form>
+</div>
+
+
+</body>
+</html>
