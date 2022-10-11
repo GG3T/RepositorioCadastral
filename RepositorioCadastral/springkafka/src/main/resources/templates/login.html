@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+    <link rel="shortcut icon" href="./image/unnamed.png" type="image/x-icon">
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    <title>Banco PAN</title>
+</head>
+<body>
+<div class="box">
+    <form action="login" method="post">
+        <fieldset>
+            <legend><b>Login</b></legend>
+            <br>
+            <div class="inputbox">
+                <input type="text" name="cpfcnpj" id="cpf" class="inputUser2" required>
+                <label for="cpf" class="labelinput2">CPF/CNPJ</label>
+            </div>
+            <br><br>
+            <div class="inputbox">
+                <input type="password" name="senha" id="password" class="inputUser2" required>
+                <label for="password" class="labelinput2">Senha</label>
+            </div>
+            <br>
+            <a th:href="@{/endereco}">Não tenho cadastro</a>
+            <br><br>
+            <button  type="submit" name="submit" id="submit" class="btn btn-dark">Enviar</a></button>
+
+        </fieldset>
+    </form>
+</div>
+
+
+</body>
+</html>

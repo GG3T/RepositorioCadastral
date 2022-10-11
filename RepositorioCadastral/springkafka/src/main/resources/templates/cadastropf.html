@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{/css/login.css}" rel="stylesheet" />
+  <link rel="shortcut icon" href="../image/unnamed.png" type="image/x-icon">
+
+  <title>BANCO PAN</title>
+</head>
+<body>
+<div class="box">
+  <form action="cadastropf" method="post">
+    <fieldset>
+      <legend><b>Cadastro</b></legend>
+      <br>
+      <div class="inputbox">
+        <input type="text" name="nm_cliente" id="nome" class="inputUser" required>
+        <label for="nome" class="labelinput">Nome Completo</label>
+      </div>
+      <br>
+      <div class="inputbox">
+        <input type="cpf" name="cpf" id="cpf" class="inputUser" required>
+        <label for="cpf" class="labelinput">CPF</label>
+      </div>
+      <br>
+      <div class="inputbox">
+        <input type="text" name="email" id="email" class="inputUser" required>
+        <label for="email" class="labelinput">E-mail</label>
+      </div>
+      <br>
+      <p>Estado Civil</p>
+      <input type="radio" id="solteiro" name="estado_civil" value="S" required>
+      <label for="solteiro">Solteiro</label>
+      <input type="radio" id="casado" name="estado_civil" value="C" required>
+      <label for="casado">Casado</label>
+      <input type="radio" id="viuvo" name="estado_civil" value="V" required>
+      <label for="viuvo">Viuvo</label>
+      <br>
+      <p>Sexo</p>
+      <input type="radio" id="feminino" name="sexo" value="F" required>
+      <label for="feminino">Feminino</label>
+      <input type="radio" id="masculino" name="sexo" value="M" required>
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="outro" name="sexo" value="O" required>
+      <label for="outro">Outro</label>
+      <br><br>
+      <div class="inputbox">
+        <label for="data_nascimento"><b>Data de Nascimento: </b></label>
+        <input type="date" name="dt_nascimento" id="data_nascimento"  required>
+        <br><br>
+        <div class="inputbox">
+          <input type="tel" name="telefone01" id="telefone" class="inputUser" required>
+          <label for="telefone" class="labelinput">Telefone 1</label>
+        </div>
+        <br>
+        <div class="inputbox">
+          <input type="tel" name="telefone02" id="telefone02" class="inputUser" required>
+          <label for="telefone" class="labelinput">Telefone 2</label>
+        </div>
+        <br>
+        <div class="inputbox">
+          <input type="password" name="senha" id="password" class="inputUser" required>
+          <label for="password" class="labelinput">Senha</label>
+        </div>
+        <br>
+        <button type="submit" name="submit" id="submit"><a th:href="@{/parabens}">Enviar</a></button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+</body>
+</html>

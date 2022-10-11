@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+    <link rel="shortcut icon" href="../image/unnamed.png" type="image/x-icon">
+    <title>Banco PAN</title>
+</head>
+<body>
+<div class="box">
+    <form action="cadastro" method="post">
+        <fieldset>
+            <br>
+            <div>
+                <button  type="submit" class="btn btn-dark" name="pessoafisica" id="submit3"><a th:href="@{/cadastropf}">Pessoa Fisica</a></button>
+            </div>
+            <br>
+            <div>
+                <button  type="submit" class="btn btn-dark" name="submit" id="submit3"><a th:href="@{/cadastropj}">Pessoa Juridica</a></button>
+            </div>
+            <br>
+        </fieldset>
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{/css/login.css}" rel="stylesheet" />
+  <link rel="shortcut icon" href="../image/unnamed.png" type="image/x-icon">
+
+  <title>Banco PAN</title>
+</head>
+<body>
+<div class="box">
+  <form action="meusprodutos" method="get">
+    <fieldset>
+      <legend><b>Meus Produtos</b></legend>
+      <br>
+      <div class="inputbox">
+        <h3>CARTÃO - <span th:text="${cartao}"></span></h3>
+        <br>
+      </div>
+      <div class="inputbox">
+        <h3>EMPRESTIMO - <span th:text="${emprestimo}"></span></h3>
+        <br>
+      </div>
+      <div class="inputbox">
+        <h3>VEICULO - <span th:text="${veiculo}"></span></h3>
+        <br>
+      </div>
+      <div class="inputbox">
+        <h3>CONTA - <span th:text="${conta_cliente}"></span></h3>
+        <br>
+      </div>
+      <div class="inputbox">
+        <h3>CONSIGNADO - <span th:text="${consginado}"></span></h3>
+        <br>
+      </div>
+      <br>
+      <div>
+        <button  class="btn btn-dark" name="submit" id="submit3"><a th:href="@{/menu}">VOLTAR</a></button>
+        <button  class="btn btn-dark" type="submit3" name="submit" id="submit3"><a th:href="@{/contratar}">CONTRATAR PRODUTOS</a></button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+
+</body>
+</html>
